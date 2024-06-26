@@ -73,8 +73,7 @@ plot(x, y,
      main = "x vs y",
      col = "blue")
 ```
-![image](https://github.com/marcocutraro/DMSL/assets/105051608/bdd73d6e-d26d-4499-ae27-87942a7f2b80)
-
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/6a8002c4-fe1f-46b7-968a-d89450530168)
 
 pdf() or jpeg() to save th output of an R plot
 
@@ -104,15 +103,15 @@ contour(x, y, z,
         add = T)
 ```
 ```
-za <- (z - t(z)) / 2
+z <- (z - t(z)) / 2
 ```
 ```
-contour(x, y, za,
+contour(x, y, z,
         nlevels = 15)
 ```
 image() produces a color-coded plot whose colors depends on the z value, also known as a heat-map
 ```
-image(x, y, za,
+image(x, y, z,
         nlevels = 15,
         add = T)
 ```
@@ -127,18 +126,23 @@ arguments theta and phi control the angles at which the plot is viewed
 image(x, y, z)
 ```
 ```
-persp(x, y, za)
-persp(x, y, za,
+persp(x, y, z)
+```
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/316a8e2e-5d0a-4574-b8eb-e5d3cdbd1187)
+
+```
+persp(x, y, z,
       theta = 30,
       phi = 0)
 ```
-![image](https://github.com/marcocutraro/DMSL/assets/105051608/ea347765-18a2-4ab5-9bc0-1dceac34ac45)
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/341ba153-2681-4b93-9760-c061bf843894)
 
 ```
-persp(x, y, za,
+persp(x, y, z,
       theta = 30,
       phi = 40)
 ```
-![image](https://github.com/marcocutraro/DMSL/assets/105051608/18464524-5827-4958-abda-95a5ec3ee5a3)
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/c984e4ec-6b53-4e42-86bf-71d57ecbed77)
+
 
 
