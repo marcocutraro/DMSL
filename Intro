@@ -1,0 +1,105 @@
+### simple R commands ###
+
+x <- c(1,2,3)
+y <- c(4,5,6)
+
+length(x)
+length(y)
+
+x + y
+
+# ls() allows us to look at a list of all objects
+ls()
+
+# rm() can be used to delete any objects we don't want
+rm(x, y)
+
+# delete all object at once
+rm(list = ls())
+
+# create a matrix
+x <- matrix(data = c(1,2,3,4), nrow = 2, ncol = 2)
+# x <- matrix(c(1,2,3,4), 2, 2)
+# byrow = TRUE to populate the matrix in order of the rows
+# x <- matrix(c(1,2,3,4), 2, 2, byrow = TRUE)
+
+sqrt(x)
+x^2
+
+# rnorm() generates a vector of random normal variables, with first argument the 
+# the sample size "n", if mean and sd are no specified, rnorm() creates
+# standard normal random variables by default
+
+x <- rnorm(50)
+y <- x + rnorm(50, mean = 10, sd = .1)
+cor(x, y)
+
+# set.seed reproduce the exact same set of random numbers
+# set.seed(12345678)
+# rnorm(50)
+
+set.seed(3)
+y <- rnorm(50)
+mean(y)
+var(y)
+sd(y)
+
+### Graphics ###
+
+# plot() is the primary way to plot data in R.
+# plot(x, y) produces a scatterplot of x vs y
+# ?plot to find out more information
+
+x <- rnorm(100)
+y <- rnorm(100)
+
+plot(x, y,
+     xlab = "x-axis",
+     ylab = "y-axis",
+     main = "x vs y",
+     col = "blue")
+
+# pdf() or jpeg() to save th output of an R plot
+
+x <- seq(1, 10)
+x
+x <- 1:10
+x
+x <- seq(0, 1, length = 5)
+x
+x <- seq(-pi, pi, length = 50)
+x
+
+# contour() produces a contour plot in order to represent 3d data, like a
+# topographical map. Arguments:
+# 1. A vector of the x values
+# 2. A vector of the y values
+# 3. A matrix that correspond to the z values for each pair of (x, y)
+
+y <- x
+z <- outer(x, y, function(x, y) cos(y) / (1 + x^2))
+
+contour(x, y, z,
+        nlevels = 45,
+        add = T)
+
+za <- (z - t(z)) / 2
+contour(x, y, za,
+        nlevels = 15)
+
+# image() produces a color-coded plot whose colors depends on the z value
+# also known as a heat-map
+image(x, y, za,
+        nlevels = 15,
+        add = T)
+# re-running contour() after image() for overlapping
+
+# persp() can be used to produce a 3d plot
+# arguments theta and phi control the angles at which the plot is viewed
+
+image(x, y, z)
+
+persp(x, y, z)
+persp(x, y, z,
+      theta = 30,
+      phi = 0)
