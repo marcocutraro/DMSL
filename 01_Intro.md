@@ -135,14 +135,16 @@ persp(x, y, z,
       theta = 30,
       phi = 0)
 ```
-![image](https://github.com/marcocutraro/DMSL/assets/105051608/341ba153-2681-4b93-9760-c061bf843894)
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/f645fb89-6e8b-4870-a333-5489ea396e6d)
 
 ```
 persp(x, y, z,
       theta = 30,
       phi = 40)
 ```
-![image](https://github.com/marcocutraro/DMSL/assets/105051608/c984e4ec-6b53-4e42-86bf-71d57ecbed77)
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/99a2b274-7e7e-4b2a-998a-ef1e57d54470)
+
+
 
 
 
