@@ -1,6 +1,14 @@
-# R Introduction
+## R Introduction
 
-## Simple R commands
+Brief intro to R programming following "Introduction to Statistical Learning: with applications in R" book.
+
+#### Table of Contents  
+1. Simple R commands
+2. Graphics
+3. Loading Data
+4. Graphical and numerical summaries
+
+#### Simple R commands
 
 ```
 x <- c(1,2,3)
@@ -59,7 +67,7 @@ var(y)
 sd(y)
 ```
 
-## Graphics
+#### Graphics
 
 plot() is the primary way to plot data in R.
 plot(x, y) produces a scatterplot of x vs y
@@ -146,7 +154,7 @@ persp(x, y, z,
 ```
 ![image](https://github.com/marcocutraro/DMSL/assets/105051608/99a2b274-7e7e-4b2a-998a-ef1e57d54470)
 
-## Loading Data
+#### Loading Data
 
 read.table() for importing a data set into R
 
@@ -170,7 +178,7 @@ names(Auto)
 ![image](https://github.com/marcocutraro/DMSL/assets/105051608/a077ed04-377c-429a-8ff8-affa5feaced0)
 
 
-## Graphical and numerical summaries
+#### Graphical and numerical summaries
 ```
 Auto$cylinders <- as.factor(Auto$cylinders)
 
