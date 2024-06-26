@@ -1,4 +1,6 @@
-## simple R commands
+# R Introduction
+
+## Simple R commands
 
 ```
 x <- c(1,2,3)
@@ -144,7 +146,71 @@ persp(x, y, z,
 ```
 ![image](https://github.com/marcocutraro/DMSL/assets/105051608/99a2b274-7e7e-4b2a-998a-ef1e57d54470)
 
+## Loading Data
+
+read.table() for importing a data set into R
+
+write.table() to export data
+```
+Auto <- read.table(".../Auto.data",
+                   header = T,
+                   na.strings = '?',
+                   stringsAsFactors = T)
+View(Auto)
+head(Auto)
+```
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/59cf2c6e-ba20-40bf-98a7-8bd89b422580)
+```
+dim(Auto)
+```
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/6835ec3f-365f-4841-a532-8856c27def89)
+```
+names(Auto)
+```
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/a077ed04-377c-429a-8ff8-affa5feaced0)
 
 
+## Graphical and numerical summaries
+```
+Auto$cylinders <- as.factor(Auto$cylinders)
 
+plot(Auto$cylinders, Auto$mpg,
+     xlab = "cylinders",
+     ylab = "mpg",
+     col = "lightblue",
+     varwidth = T,
+     horizontal = T)
+```
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/7fb28b23-1e9e-4ea2-ae0a-f7ca7d54cb67)
 
+hist() can be used to plot an histogram
+```
+hist(mpg, 
+     col ="orange", 
+     breaks = 15)
+```
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/06db83c4-b928-441b-baa5-47cacdc125ac)
+
+```
+pairs(Auto)
+
+pairs(
+  ~ mpg + 
+    displacement + 
+    horsepower + 
+    weight + 
+    acceleration,
+  data = Auto,
+  col = "purple"
+)
+```
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/613a6c2f-52ba-4a1f-a264-ad90926431f3)
+
+summary function produces a numerical summary of each variable
+
+```
+summary(Auto)
+```
+![image](https://github.com/marcocutraro/DMSL/assets/105051608/da1cc47b-87ce-44ed-b625-aa262270df2c)
+
+For qualitative variables such as name, R will list the number of observations that fall in each category. We can also produce a summary of just a singlevariable.
