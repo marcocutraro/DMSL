@@ -7,10 +7,11 @@ My personal Data Mining and Machine Learning journey using Python and R.
 |-------------------------|---------|
 |R intro and recap | [X]    |
 |Intro  | [-]     |
+|  -  Supervised vs Unsupervised Learning | [X]     |
+|  -  Parametric and nonparametric models | [ ]     |
+|  -  Evaluation of the accuracy of a model  | [ ]     |
+|  -  Contrasting goodness of fit and complexity of a model | [ ]     |
 |Data Visualization | [ ]     |
-|Parametric and nonparametric models | [ ]     |
-|Evaluation of the accuracy of a model  | [ ]     |
-|Contrasting goodness of fit and complexity of a model | [ ]     |
 |Regression and Classification: | [ ]     |
 |  -   Linear regression | [ ]     |
 |  -   Logistic regression | [ ]     |
