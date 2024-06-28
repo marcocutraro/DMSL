@@ -3,9 +3,10 @@ My personal Data Mining and Machine Learning journey using Python and R.
 
 [Work in progress]
 
-| Contents Roadmap                 | Status  |
+| R Contents Roadmap                 | Status  |
 |-------------------------|---------|
-|Intro  | [X]     |
+|R intro and recap | [X]    |
+|Intro  | [-]     |
 |Data Visualization | [ ]     |
 |Parametric and nonparametric models | [ ]     |
 |Evaluation of the accuracy of a model  | [ ]     |
