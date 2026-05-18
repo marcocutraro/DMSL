@@ -3,48 +3,99 @@ My personal Data Mining and Machine Learning journey using Python and R.
 
 [Work in progress]
 
-| R Contents Roadmap                 | Status  |
+|Fundamentals | Status  |
 |-------------------------|---------|
-|R intro and recap | [X]    |
-|Intro Machine Learning  | [-]     |
 |    -  Supervised vs Unsupervised Learning | [X]     |
 |    -  Parametric and nonparametric models | [ ]     |
-|    -  Evaluation of the accuracy of a model  | [ ]     |
-|    -  Contrasting goodness of fit and complexity of a model | [ ]     |
-|Data Visualization | [ ]     |
-|Regression and Classification: | [ ]     |
+|    -  Bias-Variance Trade Off  | [ ]     |
+|    -  Goodness of Fit vs Model Complexity | [ ]     |
+
+### Supervised Learning
+|Regression | Status  |
+|-------------------------|---------|
 |    -   Linear regression | [ ]     |
+|    -   LMultiple Linear Regression | [ ]     |
+|    -   KNN Regression | [ ]     |
+
+|Classification | Status  |
+|-------------------------|---------|
 |    -   Logistic regression | [ ]     |
-|    -   Discriminant analysis | [ ]     |
+|    -   Linear Discriminant analysis | [ ]     |
+|    -   Quadratic Discriminant analysis | [ ]     |
+|    -   Naive Bayes | [ ]     |
 |    -   K-nearest neighbors | [ ]     |
-|Resampling methods: | [ ]     |
-|    -   cross validation | [ ]     |
-|    -   Bootstrapping | [ ]     |
-|Linear model selection and regularization: | [ ]     |
-|    -   Stepwise selection | [ ]     |
-|    -   Ridge regression | [ ]     |
-|    -   Principal components regression | [ ]     |
-|    -   Partial least squares | [ ]     |
-|    -   LASSO | [ ]     |
-|Nonlinear methods (flexible regression): | [ ]     |
+
+|Resampling Methods | Status  |
+|-------------------------|---------|
+|    -   Cross Validation | [ ]     |
+|    -   Bootstrap | [ ]     |
+
+|Variable Selection | Status  |
+|-------------------------|---------|
+|    -   Best Subset Selection | [ ]     |
+|    -   Forward Stepwise Selection | [ ]     |
+|    -   Backward Stepwise Selection | [ ]     |
+
+|Regularization Methods | Status  |
+|-------------------------|---------|
+|Shrinkage Methods : | [ ]     |
+|    -   Ridge | [ ]     |
+|    -   Lasso | [ ]     |
+|Dimensionality Reduction | [ ]     |
+|    -   Principal Components Regression | [ ]     |
+|    -   Partial Least Squares | [ ]     |
+
+|Non Linear Methods | Status  |
+|-------------------------|---------|
 |    -   Polynomial regression | [ ]     |
-|    -   Regression splines | [ ]     |
-|    -   Smoothing splines | [ ]     |
-|    -   Generalized additive models | [ ]     |
-|Methods based on decision trees: | [ ]     |
-|    -   regression trees and classification | [ ]     |
+|    -   Step Functions | [ ]     |
+|    -   Basis Functions | [ ]     |
+|    -   Regression Splines | [ ]     |
+|    -   Piecewise Polynomials | [ ]     |
+|    -   Smoothing Splines | [ ]     |
+|    -   Local Regression | [ ]     |
+|    -   Generalized Additive Models | [ ]     |
+
+|Decision Trees | Status  |
+|-------------------------|---------|
+|    -   Regression Trees | [ ]     |
+|    -   Classification Trees | [ ]     |
 |    -   Bagging | [ ]     |
-|    -   Random forests | [ ]     |
+|    -   Random Forest | [ ]     |
 |    -   Boosting | [ ]     |
-|Support Vector Machines: | [ ]     |
-|    -   maximal margin classifier | [ ]     |
-|    -   Support Vector type classifier | [ ]     |
-|    -   Classification with margins of nonlinear decision | [ ]     |
-|    -   SVM with more than two classes | [ ]     |
-|Unsupervised Learning: | [ ]     |
-|    -   Association rules | [ ]     |
-|    -   PCA | [ ]     |
-|    -   Grouping methods         | [ ]     |
+
+|Support Vector Machines | Status  |
+|-------------------------|---------|
+|    -   Maximal Margin Classifier | [ ]     |
+|    -   Support Vector Classifier | [ ]     |
+|    -   Support Vector Machine | [ ]     |
+|    -   Kernel Function | [ ]     |
+|    -   Relationship to Logistic Regression | [ ]     |
+|    -   Support Vector Regression | [ ]     |
+
+### Unsupervised Learning
+|Principal Components Analysis | Status  |
+|-------------------------|---------|
+|    -   Loadings | [ ]     |
+|    -   Scores | [ ]     |
+|    -   Optimization Problem | [ ]     |
+|    -   SVD and Eigen Decomposition | [ ]     |
+|    -   Biplot | [ ]     |
+
+|Clustering Methods | Status  |
+|-------------------------|---------|
+|    -   Similarity / Dissimilarity | [ ]     |
+|    -   Iterative Greedy Descent | [ ]     |
+|    -   K-means Clustering | [ ]     |
+|    -   Hierarchical Clustering | [ ]     |
+
+|Association Rules | Status  |
+|-------------------------|---------|
+|    -   Market Basket Analysis | [ ]     |
+|    -   Frequent Itemset | [ ]     |
+|    -   Support | [ ]     |
+|    -   Confidence | [ ]     |
+|    -   Lift | [ ]     |
 
 ## Resources
 ### Books:
