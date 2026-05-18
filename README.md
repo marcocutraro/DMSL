@@ -14,7 +14,7 @@ My personal Data Mining and Machine Learning journey using Python and R.
 |Regression | Status  |
 |-------------------------|---------|
 |    -   Linear regression | [ ]     |
-|    -   LMultiple Linear Regression | [ ]     |
+|    -   Multiple Linear Regression | [ ]     |
 |    -   KNN Regression | [ ]     |
 
 |Classification | Status  |
